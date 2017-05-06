@@ -1,0 +1,97 @@
+---
+title: "Arquivo"
+author: "Carlos"
+date: "06 de Maio de 2017"
+output:
+  html_document: default
+  pdf_document: default
+subtitle: Markdown
+---
+
+# Título 
+
+## Título
+
+### Título
+
+**Negrito**
+
+*Itálico*
+
+*___________________*
+____________________
+
+- Tópico 1
+    * Tópico 2
+
+    Identação
+
+#----------------------------------
+
+Escrita de equações 
+
+\begin{equation}
+  \mu = 2
+\end{equation}
+\[\sigma^2 = 1\]
+\begin{align}
+    \begin{split}
+      f(x_i) &= test \\
+      &= \alpha_i + \beta_ix_i + \epsilon_i
+    \end{split}
+\end{align}
+--------------------------------
+```{r, fig.align='center'}
+  x <- rnorm(n = 10, mean = 100, sd = 5)
+  hist(x, main = "")
+```
+--------------------------------
+```{r}
+  data(iris)
+  plot(iris, col = "blue")
+  x <- iris[1,1]
+```
+#--------------------------------
+A primeira observação do conjunto de dados Iris é: `r x`
+
+echo: TRUE para mostrar o código, FALSE para não mostrar o código
+
+eval: TRUE para avaliar o código, FALSE para não avaliar o código
+
+message: TRUE para mostrar mensagens do pacote, FALSE caso contrário
+
+warning: TRUE para mostrar warnings, FALSE caso contrário
+
+fig.cap: Legenda para a figura
+
+fig.align: Posição da figura, center, left, right, default
+
+fig.height: altura da figura, em pixels
+
+fig.width: comprimento da figura, em pixels
+
+```{r, echo=TRUE, eval = TRUE, message=TRUE, warning=FALSE, fig.cap="Gráfico", fig.align='center', fig.height=10, fig.width=10}
+  data(iris)
+  plot(iris, col = "blue")
+  x <- iris[1,1]
+```
+# Inserir Imagens
+
+![Sepal Iris](/home/carlos/Documents/RCURSO/IrisPoint.png)
+
+
+
+Pode-se usar o comando em Latex também para o PDF. Note que com este comando a imagem não é gerado no html.  
+
+\begin{figure}
+\centering
+\caption{Iris}
+  \includegraphics[width=.75\textwidth]{/home/carlos/Documents/RCURSO/IrisPoint.png}
+\end{figure}
+
+## Colocando gifs 
+
+![NFL gif](/home/carlos/Downloads/giphy.gif)
+
+Email do pet
+pet.estatistica.ufpr@gmail.com
