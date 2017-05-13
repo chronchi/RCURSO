@@ -1,0 +1,37 @@
+---
+title: "Slides"
+header-includes:
+- \usepackage{tcolorbox}
+- \usepackage[brazil]{babel}
+date: '2017'
+output:
+  beamer_presentation:
+    colortheme: orchid
+    fig_caption: yes
+    highlight: tango
+    keep_tex: yes
+    theme: Goettingen
+    slide_leve: 2
+---
+
+## Sumário
+
+\tableofcontents
+
+# Intro 
+
+***
+
+
+# Meio 
+
+***
+
+Para inserir um título escreve hashtag mais o título. Após o título, em duas linhas 
+abaixo escrever três asteriscos.
+
+## Segundo Meio
+
+***
+
+

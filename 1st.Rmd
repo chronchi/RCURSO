@@ -26,7 +26,7 @@ ____________________
 
     Identação
 
-#----------------------------------
+----------------------------------
 
 Escrita de equações 
 
@@ -51,7 +51,7 @@ Escrita de equações
   plot(iris, col = "blue")
   x <- iris[1,1]
 ```
-#--------------------------------
+--------------------------------
 A primeira observação do conjunto de dados Iris é: `r x`
 
 echo: TRUE para mostrar o código, FALSE para não mostrar o código
