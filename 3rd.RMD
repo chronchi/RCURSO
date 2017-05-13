@@ -1,0 +1,45 @@
+---
+title: "3rd"
+author: "Carlos Ronchi"
+date: "May 13, 2017"
+output: html_document
+---
+
+```{r, message=FALSE, results='asis', tidy=TRUE}
+library(googleVis)
+op <- options(gvis.plot.tag="chart")
+
+da <- data.frame(estado = c("PR", "RJ", "SP", "Frutas"),
+                 x1 = c(21,25,27,54),
+                 x2 = c(33,25,35,88))
+line <- gvisLineChart(da)
+plot(line)
+#Gráfico de Barras
+bar <- gvisBarChart(da)
+plot(bar)
+#Gráfico de colunas
+colunas <- gvisColumnChart(da)
+plot(colunas)
+#Gráfico bubble
+bubble <- gvisBubbleChart(da)
+plot(bubble)
+
+#Gráfico de área
+area <- gvisAreaChart(da)
+plot(area)
+
+#Gráfico de Steps
+stepped <- gvisSteppedAreaChart(da,xvar="estado",
+                                yvar = c("x1","x2"),
+                                options = list(isStacked=TRUE))
+plot(stepped)
+
+#Gráfico combinado
+combo <- gvisComboChart(da, xvar="estado",
+                        yvar = c("x1","x2"),
+                        options = list(seriesType="bars",
+                        series= '{1:{type:"line"}}'))
+plot(combo)
+
+```
+

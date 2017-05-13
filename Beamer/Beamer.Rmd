@@ -5,13 +5,15 @@ header-includes:
 - \usepackage[brazil]{babel}
 date: '2017'
 output:
+  ioslides_presentation:
+    highlight: tango
   beamer_presentation:
     colortheme: orchid
     fig_caption: yes
     highlight: tango
     keep_tex: yes
-    theme: Goettingen
     slide_leve: 2
+    theme: Goettingen
 ---
 
 ## Sumário
@@ -33,5 +35,17 @@ abaixo escrever três asteriscos.
 ## Segundo Meio
 
 ***
+
+#Fim 
+
+***
+
+\begin{tcolorbox}[colback=red!5,
+colframe=red!40!blue, title= Este é o fim
+da apresentação]
+Texto dentro de caixa.
+\end{tcolorbox}
+
+
 
 
