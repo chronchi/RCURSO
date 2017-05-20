@@ -1,0 +1,11 @@
+name: "Meu site"
+output_dir: "."
+output:
+  html_document:
+    theme: paper
+navbar:
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "Projetos"
+      href: projeto.html

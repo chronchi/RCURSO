@@ -1,0 +1,29 @@
+---
+title: RStudio e websites
+author: Carlos Ronchi
+date: 20 de Maio de 2017
+output: 
+  html_document:
+    toc: true 
+    toc_float: true 
+    number_sections: true
+    code_folding: hide
+    theme: paper
+    keep_md: true
+---
+
+#Introdução
+
+Esta atividade tem como intuito mostrar e fazer arquivos para um *website*. 
+Basta criar um arquivo .Rmd no RStudio. 
+
+#Customização 
+
+Vamos customizar o nosso pré-âmbulo. 
+Vamos colocar como saída o formato html. Vamos colocar `toc: true` para adicionar
+o sumário. A opçao 
+
+
+```{r}
+  x <- 10
+```
