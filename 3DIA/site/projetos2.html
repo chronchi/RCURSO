@@ -11,7 +11,7 @@
 
 
 
-<title>RStudio e websites</title>
+<title>Projetos 2</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -19,11 +19,7 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
-<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
-<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
-<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<script src="site_libs/navigation-1.1/codefolding.js"></script>
 <link href="site_libs/highlightjs-1.1/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-1.1/highlight.js"></script>
 
@@ -161,111 +157,8 @@ $(document).ready(function () {
 </script>
 
 <!-- code folding -->
-<style type="text/css">
-.code-folding-btn { margin-bottom: 4px; }
-</style>
-<script>
-$(document).ready(function () {
-  window.initializeCodeFolding("hide" === "show");
-});
-</script>
 
 
-
-
-<script>
-$(document).ready(function ()  {
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2,h3",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = true;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
-</script>
-
-<style type="text/css">
-
-#TOC {
-  margin: 25px 0px 20px 0px;
-}
-@media (max-width: 768px) {
-#TOC {
-  position: relative;
-  width: 100%;
-}
-}
-
-
-.toc-content {
-  padding-left: 30px;
-  padding-right: 40px;
-}
-
-div.main-container {
-  max-width: 1200px;
-}
-
-div.tocify {
-  width: 20%;
-  max-width: 260px;
-  max-height: 85%;
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  div.tocify {
-    width: 25%;
-  }
-}
-
-@media (max-width: 767px) {
-  div.tocify {
-    width: 100%;
-    max-width: none;
-  }
-}
-
-.tocify ul, .tocify li {
-  line-height: 20px;
-}
-
-.tocify-subheader .tocify-item {
-  font-size: 0.90em;
-  padding-left: 25px;
-  text-indent: 0;
-}
-
-.tocify .list-group-item {
-  border-radius: 0px;
-}
-
-
-</style>
-
-<!-- setup 3col/9col grid for toc_float and main content  -->
-<div class="row-fluid">
-<div class="col-xs-12 col-sm-4 col-md-3">
-<div id="TOC" class="tocify">
-</div>
-</div>
-
-<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -307,36 +200,19 @@ div.tocify {
 
 <div class="fluid-row" id="header">
 
-<div class="btn-group pull-right">
-<button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Code</span> <span class="caret"></span></button>
-<ul class="dropdown-menu" style="min-width: 50px;">
-<li><a id="rmd-show-all-code" href="#">Show All Code</a></li>
-<li><a id="rmd-hide-all-code" href="#">Hide All Code</a></li>
-</ul>
-</div>
 
 
-
-<h1 class="title toc-ignore">RStudio e websites</h1>
+<h1 class="title toc-ignore">Projetos 2</h1>
 
 </div>
 
 
-<div id="introducao" class="section level1">
-<h1><span class="header-section-number">1</span> Introdução</h1>
-<p>Esta atividade tem como intuito mostrar e fazer arquivos para um <em>website</em>. Basta criar um arquivo .Rmd no RStudio.</p>
-</div>
-<div id="customizacao" class="section level1">
-<h1><span class="header-section-number">2</span> Customização</h1>
-<p>Vamos customizar o nosso pré-âmbulo. Vamos colocar como saída o formato html. Vamos colocar <code>toc: true</code> para adicionar o sumário. A opçao</p>
-<pre class="r"><code>  x &lt;- 10</code></pre>
-<p>Para mais informações, acesse em <a href="projeto.html">Projeto</href></p>
-</div>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mi velit, auctor vitae risus nec, facilisis porta ligula. In erat ante, vulputate non ex faucibus, accumsan auctor mauris. Nullam semper lacus a tempor mattis. Vestibulum id massa imperdiet, consectetur ante vel, sagittis velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris molestie quam magna, vel dapibus nibh ultrices nec. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut vestibulum, dui a convallis suscipit, erat mauris efficitur tortor, sit amet mattis sapien metus quis urna.</p>
+<p>Ut quis neque ligula. Aenean euismod lacus at sapien cursus elementum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla et lectus a mauris posuere ullamcorper. Etiam magna magna, vestibulum pellentesque magna ac, placerat consectetur ligula. Integer mollis molestie felis, id semper lacus volutpat vestibulum. Vivamus volutpat quis risus sed fermentum. Vivamus viverra sem lorem, eget interdum magna tempus a.</p>
+<p>Pellentesque pharetra varius pulvinar. Duis dignissim velit a tellus blandit, vel commodo lorem laoreet. Curabitur scelerisque porttitor metus ut consectetur. Sed mattis ultricies risus et sagittis. Nullam ac nibh ut nulla laoreet congue. Pellentesque porta iaculis urna a lacinia. Vestibulum sem risus, tincidunt quis placerat vitae, sollicitudin sit amet neque. Sed volutpat lobortis ante et gravida. Aliquam non risus tincidunt, maximus eros et, euismod tortor. Cras massa odio, luctus vitae blandit eget, faucibus sit amet nunc. Nulla mattis, magna sit amet iaculis maximus, enim nunc malesuada nunc, at pulvinar nulla neque vitae sem. Integer nunc purus, vulputate in sem a, vulputate tempor enim. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas mattis tristique erat et dapibus. Nunc ac ligula sed felis finibus sodales. Fusce ut mollis erat, sit amet pellentesque magna.</p>
 
 
 
-</div>
-</div>
 
 </div>
 

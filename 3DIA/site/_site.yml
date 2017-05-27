@@ -1,11 +1,18 @@
-name: "Meu site"
+/name: "Meu site"
 output_dir: "."
 output:
   html_document:
     theme: paper
+    includes:
+      #before_body: before_.html
+      #after_body: after.html
+    #css: style_.css
 navbar:
   left:
     - text: "Home"
       href: index.html
     - text: "Projetos"
       href: projeto.html
+      menu:
+        - text: "Projeto 2"
+          href: "projetos2.html"

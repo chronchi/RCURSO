@@ -24,4 +24,4 @@ o sumário. A opçao
   x <- 10
 ```
 
-Para mais informações, entre em 
+Para mais informações, acesse em <a href="projeto.html">Projeto</href>
