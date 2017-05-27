@@ -1,0 +1,16 @@
+---
+title: "Referências"
+author: "Carlos Ronchi"
+date: 27 de Maio de 2017
+csl: ABNT_UFPR_2011.csl
+output: html_document
+bibliography: referencia.bib
+---
+
+# Introdução 
+
+Segundo @shai, machine learning é uma subárea da inteligência artificial
+que é cada vez mais usada. 
+
+# Referências
+
